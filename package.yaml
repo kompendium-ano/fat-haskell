@@ -1,0 +1,18 @@
+name: fat-haskell
+version: '0.1.0.0'
+category: Web
+author: Sergey Bushnyak
+maintainer: sergey.bushnyak@sigrlami.eu
+copyright:
+- (c) 2020
+- Sergey Bushnyak
+license: BSD3
+github: sigrlami/fat-haskell
+extra-source-files:
+- README.md
+dependencies:
+- base >=4.7 && <5
+library:
+  source-dirs: src
+  exposed-modules:
+  - Lib
