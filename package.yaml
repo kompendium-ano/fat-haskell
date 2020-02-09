@@ -6,17 +6,11 @@ maintainer: sergey.bushnyak@sigrlami.eu
 copyright:
 - (c) 2020
 - Sergey Bushnyak
-license: BSD3
+license: MIT
 github: sigrlami/fat-haskell
 extra-source-files:
 - README.md
 dependencies:
-- base >=4.7 && <5
-library:
-  source-dirs: src
-  exposed-modules:
-  - Lib
-  dependencies:
   - base >=4.7 && <5
   - aeson
   - aeson-casing
@@ -30,4 +24,10 @@ library:
   - remote-monad
   - remote-json
   - remote-json-client
+  # - json-autotype
   - json-alt
+  - bytestring
+library:
+  source-dirs: src
+  exposed-modules:
+  - FAT.RPC.Api

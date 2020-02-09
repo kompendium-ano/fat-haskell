@@ -1,24 +1,59 @@
-name:                fat-haskell
-version:             0.1.0.0
--- synopsis:
--- description:
-homepage:            https://github.com/sigrlami/fat-haskell#readme
-license:             BSD3
-license-file:        LICENSE
-author:              Sergey Bushnyak
-maintainer:          sergey.bushnyak@sigrlami.eu
-copyright:           (c) 2020, Sergey Bushnyak
-category:            Web
-build-type:          Simple
-extra-source-files:  README.md
-cabal-version:       >=1.10
+cabal-version: 1.12
 
-library
-  hs-source-dirs:      src
-  exposed-modules:     Lib
-  build-depends:       base >= 4.7 && < 5
-  default-language:    Haskell2010
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: a89764bfe1df21e2f9cca4e7df5c3ad78e7c637f6c1384e33246a82de172230c
+
+name:           fat-haskell
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/sigrlami/fat-haskell#readme
+bug-reports:    https://github.com/sigrlami/fat-haskell/issues
+author:         Sergey Bushnyak
+maintainer:     sergey.bushnyak@sigrlami.eu
+copyright:      (c) 2020,
+                Sergey Bushnyak
+license:        MIT
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
 
 source-repository head
-  type:     git
+  type: git
   location: https://github.com/sigrlami/fat-haskell
+
+library
+  exposed-modules:
+      FAT.RPC.Api
+  other-modules:
+      FAT.RPC.Types
+      FAT.RPC.Types.Balances
+      FAT.RPC.Types.Issuance
+      FAT.RPC.Types.Rates
+      FAT.RPC.Types.RichEntry
+      FAT.RPC.Types.SyncStatus
+      FAT.RPC.Types.Transaction
+      FAT.RPC.Types.TransactionStatus
+      Paths_fat_haskell
+  hs-source-dirs:
+      src
+  build-depends:
+      aeson
+    , aeson-casing
+    , base >=4.7 && <5
+    , bytestring
+    , http-client
+    , http-client-tls
+    , http-conduit
+    , json-alt
+    , network
+    , remote-json
+    , remote-json-client
+    , remote-monad
+    , text
+    , time
+    , transformers
+  default-language: Haskell2010
