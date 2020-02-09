@@ -1,6 +1,6 @@
 # FAT in Haskell
 
-[![Build Status](https://travis-ci.com/kompendium-llc/fat-haskell-client.svg?branch=master)](https://travis-ci.com/kompendium-llc/fat-haskell-client)
+[![Build Status](https://travis-ci.com/kompendium-llc/fat-haskell-client.svg?branch=master)](https://travis-ci.com/kompendium-llc/fat-haskell)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/kompendium-llc/api-rpc-factom/blob/master/LICENSE)
 
 
