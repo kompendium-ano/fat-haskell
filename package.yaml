@@ -16,3 +16,18 @@ library:
   source-dirs: src
   exposed-modules:
   - Lib
+  dependencies:
+  - base >=4.7 && <5
+  - aeson
+  - aeson-casing
+  - text
+  - time
+  - http-conduit
+  - http-client
+  - http-client-tls
+  - network
+  - transformers
+  - remote-monad
+  - remote-json
+  - remote-json-client
+  - json-alt
