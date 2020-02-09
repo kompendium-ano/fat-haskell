@@ -57,11 +57,11 @@ reqGetTransaction txid =
   method "get-transaction"
     $ Named [("txid", String txid)]
 
--- | Get the total supply for each pegnet asset.
+-- | Get the issuance entry for a token.
 --
-reqFATIssuance :: RPC NetIssuance
-reqFATIssuance =
-  method "get-pegnet-issuance" None
+reqGetIssuance :: RPC NetIssuance
+reqGetIssuance =
+  method "get-issuance" None
 
 -- | Get the pegnet asset balances for a given address
 --
